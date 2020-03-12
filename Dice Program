@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int
+main ()
+{
+  int i,dice1, dice2,dice3,dice4,sum,sum1;
+  srand (time (0));
+  dice1 = (rand () % 6) + 1;
+  printf ("%d,", dice1);
+  dice2 = (rand () % 6) + 1;
+  printf ("%d\n", dice2);
+  sum = dice1 + dice2;
+  if (sum == 7 || sum == 11)
+    printf ("win");
+  else if(sum == 2 ||sum== 3 ||sum== 12)
+    printf ("lose");
+  else
+    {
+      for(i=0;i<100;i++)
+    {
+     dice3 = (rand () % 6) + 1;
+     printf ("%d,", dice3);
+     dice4 = (rand () % 6) + 1;
+     printf ("%d\n", dice4);
+     sum1=dice3+dice4;
+    if(sum1==7)
+         {
+             printf("lose");
+             break;
+         }
+   
+     if (sum1==sum)
+     {
+             printf("win");
+             break;
+         }
+     }
+     sum1=0;
+
+    }
+  return 0;
+}
