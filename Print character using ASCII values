@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+int a,b,c,d,e,f,g;
+printf("enter ASCII : \n");
+scanf("%d",&a);
+printf("enter ASCII : \n");
+scanf("%d",&b);
+printf("enter ASCII : \n");
+scanf("%d",&c);
+printf("enter ASCII : \n");
+scanf("%d",&d);
+printf("enter ASCII : \n");
+scanf("%d",&e);
+printf("enter ASCII : \n");
+scanf("%d",&f);
+printf("enter ASCII : \n");
+scanf("%d",&g);
+printf("enter ASCII : \n");
+printf("the name is %c%c%c%c%c%c%c",a,b,c,d,e,f,g);
+
+return 0;
+}
+
+
