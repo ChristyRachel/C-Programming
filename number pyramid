@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+      int row,col,spac,count;
+      spac=4;
+      for(col=1;col<=5;col++)
+      {
+          count=col;
+          for(row=1;row<=spac;row++) 
+          printf("  "); 
+          spac--;
+          for(row=1;row<=col;row++) 
+          {
+             printf("%d ",count); 
+             count++;
+          }
+          count--;
+          count--;
+          for(row=1;row<col;row++) 
+          {
+              printf("%d ",count); 
+              count--;
+          }
+        printf("\n");
+      }
+      return 0; 
+}
