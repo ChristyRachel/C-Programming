@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+    int year;//intialize year
+    printf("enter the year:");//to print it
+    scanf("%d",&year);//to read the input year
+    if (year%4==0)//if the remainder of year divided by 4 is zero, then print it is a leap year
+    {
+        printf("%d is a leap year",year);
+    }
+    else//if the remainder of year divided by 4 is not zero, then print it is not a leap year
+    {
+        printf("%d is not a leap year",year);
+    }
+return 0;
+}
+
+
+
+
