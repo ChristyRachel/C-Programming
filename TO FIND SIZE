@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int typei;
+    float typef;
+    double typed;
+    char typec;
+    
+    printf("size of int is %ld bytes\n",sizeof(typei));
+    printf("size of float is %ld bytes\n",sizeof(typef));
+    printf("size of double is %ld bytes\n",sizeof(typed));
+    printf("size of char is %ld bytes\n",sizeof(typec));
+    
+    return 0;
+}
