@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main()
+{
+    int *pa,a;
+    double *pb,b;
+    char *pc,c;
+    
+    a=2;
+    b=3.1;
+    c=30;
+    
+    pa=&a;
+    pb=&b;
+    pc=&c;
+    
+    printf("The address of a is %p\n",pa);
+    printf("The address of b is %p\n",pb);
+    printf("The address of c is %p\n",pc);
+    printf("The address of pa is %p\n",&pa); 
+    printf("The address of pb is %p\n",&pb);
+    printf("The address of pc is %p\n\n",&pc);
+    
+    printf("The value of a is %d\n",*pa);
+    printf("The value of b is %lf\n",*pb); 
+    printf("The value of c is %d\n",*pc); 
+    printf("The value of pa is %p\n",pa);
+    printf("The value of pb is %p\n",pb); 
+    printf("The value of pc is %p\n\n",pc); 
+
+    printf("The size of int is %ld bytes\n",sizeof(*pa));
+    printf("The size of double is %ld bytes\n",sizeof(*pb));
+    printf("The size of char is %ld bytes\n",sizeof(*pc));
+    printf("The size of pa is %ld bytes\n",sizeof(pa));
+    printf("The size of pb is %ld bytes\n",sizeof(pb));
+    printf("The size of pc is %ld bytes\n",sizeof(pc));  
+    
+    return 0;
+}
