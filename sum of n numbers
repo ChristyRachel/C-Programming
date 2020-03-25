@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int limit,sum,i,a;
+    printf("Enter the limit :");
+    scanf("%d",&limit);
+    for(i=0;i<limit;i++)
+    {
+        printf("enter the number :");
+        scanf("%d",&a);
+        sum+=a;
+    }
+    printf("The sum is %d",sum);
+    return 0;
+}
