@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c,temp;
+    int*pa;
+    int*pb;
+    int*pc;
+    int*ptemp;
+    temp=0;
+    ptemp=&temp;
+    pa=&a;
+    pb=&b;
+    pc=&c;
+    printf("Enter the 1st number : ");
+    scanf("%d",pa);
+    printf("Enter the 2nd number : ");
+    scanf("%d",pb);
+    printf("Enter the 3rd number : ");
+    scanf("%d",pc);
+    
+    *ptemp=*pa;
+    *pa=*pb;
+    *pb=*pc;
+    *pc=*ptemp;
+    
+    printf("The value of a is %d\n",*pa);
+    printf("The value of b is %d\n",*pb); 
+    printf("The value of c is %d\n",*pc); 
+
+    return 0;
+}
