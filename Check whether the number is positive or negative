@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    double n;
+    printf("Enter the number :");
+    scanf("%lf",&n);
+    
+    if (n==0)
+        printf("Entered number is zero");
+    else if(n<0)
+        printf("Entered number is a negative number");
+    else
+        printf("Entered number is a positive number");
+    
+    return 0;
+}
