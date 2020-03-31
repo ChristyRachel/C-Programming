@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+    char c,C;
+    //lowercase
+    for(c='a';c<='z';c++)
+        printf("%c \n\n",c);
+    //uppercase
+    for(C='A';C<='Z';C++)
+        printf("%c \n",C);
+    return 0;
+}
