@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+  int limit, i, sum = 0;
+  
+  printf("Enter the limit : \n");
+  scanf("%d", &limit);
+  
+  for(i = 1; i <=limit; i++)
+  {
+     sum = sum + i;
+  }
+  
+  printf("sum of natural numbers from 1 to %d is %d", limit,sum);
+  return 0;
+}
