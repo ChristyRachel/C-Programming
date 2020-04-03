@@ -1,0 +1,18 @@
+#include <stdio.h>
+int sum_of_numbers(int n);
+int main()
+{
+    int limit;
+    printf("Enter the limit : ");
+    scanf("%d", &limit);
+    printf("sum = %d", sum_of_numbers(limit));
+    return 0;
+}
+
+int sum_of_numbers(int n) 
+{
+    if (n != 0)
+        return n + sum_of_numbers(n - 1);
+    else
+        return n;
+}
