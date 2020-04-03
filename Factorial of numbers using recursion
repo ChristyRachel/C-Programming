@@ -1,0 +1,18 @@
+#include <stdio.h>
+int factorial(int n);
+int main()
+{
+    int limit;
+    printf("Enter the limit : ");
+    scanf("%d", &limit);
+    printf("factorial = %d", factorial(limit));
+    return 0;
+}
+
+int factorial(int n) 
+{
+    if (n != 1)
+        return n * factorial(n - 1);
+    else
+        return n;
+}
