@@ -1,0 +1,19 @@
+# include <stdio.h>
+
+int main()
+{
+    int i,n,digit1,digit2,term;
+    digit1 = 0;
+    digit1 = 1;
+    printf("Enter the limit : ");
+    scanf("%d",&n);
+    for(i=0;i<=n;i++)
+    {
+        printf("%d ",term);
+        term = digit1 + digit2;
+        digit1 = digit2;
+        digit2 = term;
+    }
+    
+    return 0;
+}
