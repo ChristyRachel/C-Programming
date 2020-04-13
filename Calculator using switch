@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+    int n1,n2;
+    char x;
+    printf("Enter the operator : ");
+    scanf("%c",&x);
+    printf("Enter the numnbers : \n");
+    scanf("%d%d",&n1,&n2);
+    switch(x)
+    {
+        case '+':
+            printf("%d + %d = %d",n1,n2,(n1+n2));
+            break;
+        case '-':
+            printf("%d - %d = %d",n1,n2,(n1-n2));
+            break;
+        case '/':
+            printf("%d / %d = %d",n1,n2,(n1/n2));
+            break;
+        case '*':
+            printf("%d * %d = %d",n1,n2,(n1*n2));
+            break;
+        default:
+            printf("Operator is not correct");
+    }
+
+    return 0;
+}
