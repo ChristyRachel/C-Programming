@@ -1,1 +1,0 @@
-largest.o: ../largest.c
