@@ -15,11 +15,11 @@
 void calculate_the_maximum(int n, int k) {
 
   //Write your code here.
-  int i=0,j=0,MaxAnd=0,MaxOr=0, MaxXor=0;
+  int MaxAnd=0,MaxOr=0, MaxXor=0;
 
-  for(i=0;i<=n;i++){
+  for(int i=1;i<=n;i++){
 
-      for(j=i+1;j<=n;j++){
+      for(int j=i+1;j<=n;j++){
 
         int And = i & j;
         int Or = i | j;
