@@ -1,11 +1,3 @@
-/*
- * src.c
- *
- *  Created on: Jul. 10, 2020
- *      Author: christy
- */
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "function_lib.h"
